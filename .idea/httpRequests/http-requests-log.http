@@ -1,0 +1,108 @@
+GET http://localhost:8080/selectOne
+
+<> 2020-01-10T120925.200.json
+
+###
+
+GET http://localhost:8080/selectOne
+
+<> 2020-01-10T115206.200.json
+
+###
+
+GET http://localhost:8080/selectOneq
+
+<> 2020-01-10T114618.200.json
+
+###
+
+PUT http://localhost:8080/updateOneq
+Content-Type: application/json
+
+{
+  "id": 13,
+  "ex3": "swpark",
+  "ex4": "intelij"
+}
+
+###
+
+PUT http://localhost:8080/updateOneq
+Content-Type: application/json
+
+{
+  "id": 13,
+  "ex3": "swpark",
+  "ex4": "intelij"
+}
+
+<> 2020-01-09T053349.200.txt
+
+###
+
+PUT http://localhost:8080/updateOneq
+Content-Type: application/json
+
+{
+  "id": 13,
+  "ex3": "swpark",
+  "ex4": "intelij"
+}
+
+<> 2020-01-09T053228.200.txt
+
+###
+
+PUT http://localhost:8080/updateOneq
+Content-Type: application/json
+
+{
+  "id": 1,
+  "ex3": "asd",
+  "ex4": "psw"
+}
+
+<> 2020-01-09T053036.200.txt
+
+###
+
+GET http://localhost:8080/gau3
+
+<> 2020-01-09T050735.404.json
+
+###
+
+GET http://localhost:8080/gau
+
+<> 2020-01-09T050723.500.json
+
+###
+
+GET http://localhost:8080/gau2
+
+<> 2020-01-09T050708.200.json
+
+###
+
+GET https://www.naver.com
+
+<> 2020-01-09T050537.200.html
+
+###
+
+GET https://www.naver.com
+
+<> 2020-01-09T045530.200.html
+
+###
+
+GET https://www.naver.com
+
+<> 2020-01-09T045039.200.html
+
+###
+
+GET https://www.devbeginner.com
+
+###
+

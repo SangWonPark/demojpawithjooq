@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demojpawithjooq.mapper.hijklmnMapper">
+
+    <resultMap id="ResHtoN" type="com.example.demojpawithjooq.dto.hijklmn">
+        <result property="id" column="id"/>
+    </resultMap>
+
+    <insert id="insertOneB" parameterType="com.example.demojpawithjooq.dto.hijklmn" >
+        insert into hijklmn values (#{id},#{ex3},#{ex4});
+    </insert>
+
+    <select id="selectOneB" resultType="com.example.demojpawithjooq.dto.hijklmn">
+        SELECT * FROM hijklmn WHERE id=#{id};
+    </select>
+
+    <update id="updateOneB" parameterType="com.example.demojpawithjooq.dto.hijklmn">
+        update hijklmn set ex3=#{ex3}, ex4=#{ex4} where id=#{id}
+    </update>
+
+    <delete id="deleteOneB" >
+        delete from hijklmn where id=#{id}
+    </delete>
+
+    <select id="select" resultType="com.example.demojpawithjooq.dto.abcdefg">
+        select ex1, ex2 from abcdefg where ex1 in (select ex3 from hijklmn) order by ex1 desc;
+    </select>
+
+    <select id="joinAtoN" resultType="com.example.demojpawithjooq.dto.AtoN">
+        select * from abcdefg join hijklmn on abcdefg.ex1 = hijklmn.ex3;
+    </select>
+
+</mapper>

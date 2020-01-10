@@ -1,0 +1,20 @@
+###
+GET http://localhost:8080/selectOne
+
+###updateOneB, updateOnep, updateOneq
+PUT http://localhost:8080/updateOneq
+Content-Type: application/json
+
+{
+  "id": 13,
+  "ex3": "swpark",
+  "ex4": "intelij"
+}
+
+###
+POST http://localhost:8080/
+
+###
+PATCH http://localhost:8080/
+
+###

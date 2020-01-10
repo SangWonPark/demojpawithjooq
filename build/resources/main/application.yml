@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://10.10.0.57:3306/swpark_db?useSSL=false
+    username: root
+    password: okestro2018
+    hikari:
+      max-lifetime: 270
+      idle-timeout: 270
+  jooq:
+    sql-dialect: mariadb
+mybatis:
+  type-aliases-package: com.example.demojpawithjooq.mapper
+  mapper-locations: mybatis/mapper/*.xml
